@@ -18,21 +18,38 @@
 </head>
 <body>
   <header>
-    <img src="/images/logo.svg" alt="logo"/>
+    <img src="/images/logo.svg" width="80px" alt="logo"/>
   </header>
   <main>
     <picture>
+       <source
+        class="desktop"
+        media="(min-width: 601px)"
+        srcset="images/hero-desktop.jpg"
+      />
+      <source
+        class="mobile"
+        media="(max-width: 550px)"
+        srcset="images/hero-mobile.jpg"
+      />
+      <img
+        class="line"
+        src="images/hero-desktop.jpg"
+        alt="hero"
+      />
       
     </picture>
-<h1>>We're coming soon</h1
+<h1>We're <br/> <span>coming</span> <br/> <span>soon</span></h1>
 
  <p>Hello fellow shoppers! We're currently building our new fashion store. 
   Add your email below to stay up-to-date with announcements and our launch deals.</p> 
 
   <form>
-    <label>>Email Address</label>
-    <input type="text">
-    <button><img src="/images/icon-arrow.svg" alt="arrow"/></button>
+    <label>Email Address</label>
+    <input type="email"/>
+    <button>
+      <img src="/images/icon-arrow.svg"  alt="arrow"/>
+    </button>
   </form>
   </main>
 
