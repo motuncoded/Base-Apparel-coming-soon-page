@@ -39,18 +39,27 @@
       />
       
     </picture>
+    <div class="content">
 <h1>We're <br/> <span>coming</span> <br/> <span>soon</span></h1>
 
  <p>Hello fellow shoppers! We're currently building our new fashion store. 
   Add your email below to stay up-to-date with announcements and our launch deals.</p> 
 
   <form>
-    <label>Email Address</label>
-    <input type="email"/>
-    <button>
+    <div class="input-wrapper">
+    <input type="email" class="email" placeholder="Email Address"/>
+      <img src="/images/icon-error.svg" alt="error" class="hidden"/>
+
+    <button class="btn">
       <img src="/images/icon-arrow.svg"  alt="arrow"/>
     </button>
+
+
+    </div>
+                <span class=" hidden error">Please provide a valid email</span>
+
   </form>
+  </div>
   </main>
 
   
